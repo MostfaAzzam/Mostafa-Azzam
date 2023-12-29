@@ -1,0 +1,107 @@
+﻿/*contact page*/
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color:gray;
+}
+h1{
+    font-family:Bahnschrift;
+    color:aliceblue;
+    font-size-adjust:inherit;
+}
+.wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+    .wrapper .icons {
+        text-align: center;
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+    }
+
+        .wrapper .icons span {
+            display: block;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            box-shadow: 0 6px 10px #0000003b;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+            .wrapper .icons span i {
+                line-height: 60px;
+                font-size: 35px;
+            }
+
+
+        .wrapper .icons .tooltips {
+            position: absolute;
+            top: 0;
+            left: -15px;
+            color: white;
+            padding: 6px 14px;
+            font-size: 20px;
+            border-radius: 20px;
+            opacity: 0;
+            box-shadow: #0000002b 0px -23px 25px 0px inset, #0000001a 0px -79px 40px 0px inset, #0000006b 0px 10px 20px;
+            transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .wrapper .icons:hover .tooltips {
+            top: -60px;
+            opacity: 1;
+        }
+
+        .wrapper .icons:hover span {
+            color: white;
+        }
+
+        .wrapper .icons:hover span,
+        .wrapper .icons:hover .tooltips {
+            text-shadow: 0px -1px 0px #00000066;
+        }
+
+    .wrapper .whatsapp:hover span,
+    .wrapper .whatsapp:hover .tooltips {
+        background-color: #25ce3c;
+    }
+
+    .wrapper .instagram:hover span,
+    .wrapper .instagram:hover .tooltips {
+        background: -webkit-linear-gradient(bottom right, #ffc54e 0%, #fc0538 50%, #6650f5 100%);
+    }
+
+    .wrapper .twitter:hover span,
+    .wrapper .twitter:hover .tooltips {
+        background-color: #4650f6;
+    }
+
+    .wrapper .youtub:hover span,
+    .wrapper .youtub:hover .tooltips {
+        background-color: #fc0538;
+    }
+
+.Zero{
+    text-decoration: none;
+    width: 90vw;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper {
+        gap: 15px;
+    }
+}

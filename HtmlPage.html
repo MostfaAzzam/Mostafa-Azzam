@@ -1,0 +1,317 @@
+﻿<!-- Created by Mostafa Azzam /Mostafa Salama / Malak Khalil/ Maram Hassan/ Marwa Faisal  ************ 
+    
+    (HOME PAGE)
+    
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="Acadmia Maz_courses_AI,Cyber_security,Web_development">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+
+    <title>Acadmia Maz</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Acadmia Maz_courses_AI,Cyber_security,Web_development">
+    <link rel="stylesheet" href="Project C.css">
+    <title>Welcome Academia Maz</title>
+
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+</head>
+<body>
+
+
+    <div class="menu-bar">
+        <h1 class="logo">Acadmia<span>Maz</span></h1>                               <!--هنا احنا عملنا لوجو اكادميا ماز حطنا كلمه ماز مابين تاج اسمها سبان علشان نخلي لونها مختلف بسهوله-->
+        <ul>
+            <li><a href="HtmlPage.html">Home</a></li>                     <!--ربطنا صفحه الهوم بلينك لفحه الهومعلشان تضغط عليها تحولك للصفحه الؤئيسيه -->
+            <li><a href="HtmlPage5.html">About</a></li>                   <!--ربطنا صفحه ال اباوت بالصفحه الرئيسيه -->
+            <li>
+                <a href="HtmlPage.html">Pages <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="login.html.html">Login</a></li>                  <!--ربطنا صفحه اللوجين بالصفحه الرئيسيه وكذالك في الباقي  -->
+                        <li><a href="HtmlPage2.html">Vedioes</a></li>
+                        <li>
+                            <a href="#">CLASS <i class="fas fa-caret-right"></i></a>         <!-- عملنا كلاس و حطينا فيها كذا كلاس تانيه بس احنا هنا مربطنهاش بلينك-->
+
+                            <div class="dropdown-menu-1">
+                                <ul>
+                                    <!--ul عملنا قائمه بتاج-->
+                                    <li><a href="#">Class-1</a></li>
+                                    <li><a href="#">Class-2</a></li>
+                                    <li><a href="#">Class-3</a></li>
+                                    <li><a href="#">Class-4</a></li>
+                                </ul>
+                            </div><!--dropdown-menu-1هنا بتنتهي الكلاس اللي اسمها -->
+                        </li>
+                        <li><a href="HtmlPage6.html">FAQ</a></li>                   <!--يعني الاسئله المتكرره بخصوص موقعناFAQ -->
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="HtmlPage4.html">Certificate</a>                      <!--صفحه الشهاده لما بتخلص الكورس بتاخد الشهاده-->
+            </li>
+            <li><a href="HtmlPage3.html">Contact us</a></li> <!--صفحه التواصل -->
+        </ul>
+    </div>
+    <div class="hero">
+        
+        &nbsp;
+
+        <br />
+
+
+        <center>
+            <img src="css/Free.png" />
+            <div class="input-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here....." />
+                <button class="buttonZ">Search</button>
+            </div>
+
+            <!-- Javascript code-->
+            <script>
+                const button = document.querySelector("button");
+
+                button.addEventListener("mousedown", () => button.classList.add("clicked"));
+                button.addEventListener("mouseup", () => button.classList.remove("clicked"));
+            </script>
+
+
+        </center>
+        <style>
+            body {
+                min-height: 100vh;
+                display: contents;
+                align-items: center;
+                justify-content: center;
+                background: #b3f7fe;
+            }
+
+            .input-box {
+                position: relative;
+                height: 76px;
+                max-width: 900px;
+                width: 1000px;
+                background: #d5eef2;
+                margin: 0 20px;
+                border-radius: 20px;
+                box-shadow: rgba(0, 0,0,0.1);
+            }
+
+                .input-box i {
+                    left: 15px;
+                    font-size: 30px;
+                    color: azure;
+                }
+
+                .input-box i, .input-box .buttonZ {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%)
+                }
+
+
+
+                .input-box input {
+                    height: 100%;
+                    width: 100%;
+                    outline: none;
+                    font-size: 18px;
+                    font-weight: 400;
+                    border: none;
+                    padding: 0 155px 0 65px;
+                    background-color: transparent;
+                }
+
+                .input-box .buttonZ {
+                    right: 15px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: white;
+                    border: none;
+                    padding: 12px 20px;
+                    border-radius: 6px;
+                    background-color: #0094ff;
+                    cursor: pointer;
+                }
+
+                    .input-box .buttonZ.clicked {
+                        transform: translateY(-50%) scale(0.98);
+                    }
+
+            @media screen and (max-width: 500px) {
+                .input-box {
+                    height: 66px;
+                    margin: 0 8px;
+                }
+
+                    .input-box i {
+                        left: 12px;
+                        font-size: 25px;
+                    }
+
+                    .input-box input {
+                        padding: 0 112px 0 50px;
+                    }
+
+                    .input-box .buttonZ {
+                        right: 12px;
+                        font-size: 14px;
+                        padding: 8px 18px;
+                    }
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <center>
+            <h1>What do we offer you ?</h1>
+            <br />
+            <br />
+            <h3>Free courses</h3>
+            <br />
+            <p>
+
+                we have published more than 500 courses
+                since yhe baginning of the year, all of which are free
+                and without fees and can be participated in for free.
+                we always offer you the best.
+
+            </p>
+            <br />
+            <br />
+            <br />
+
+            <h3>Distinctive services</h3>
+            <br />
+            <p>We seriously help you to obtain a better career and educational future. join the workshops, or request your service according to your need.</p>
+            <br />
+            <br />
+            <br />
+            <h3>Volunteer opportunities</h3>
+            <br />
+            <p>Providing more than one volunteer program, such as volunteering in humanitarian organizations by volunteering with the united nations and UNICEF</p>
+            <br />
+            <br />
+            <br />
+            <h3>Vocational training</h3>
+            <br />
+            <p>Starting vocational training directly after high school, industrial or technical school, or any other type of school qualifies for a training contract in Germany.</p>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br /> <br />
+            <h1>What you want to learn?</h1>
+            <br />
+            <br />
+            <h2>Learn more about the content we provide you</h2>
+            <br />
+            <a href="videopagehtml2.html"><img src="css/Ai.png" width="250" height="200" /></a>
+            <a href="videopagehtml3.html"><img src="css/web.jpg" width="250" height="200" /></a>
+            <a href="videopagehtml1.html"><img src="css/292.jpg" width="250" height="200" /></a>
+
+
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <ul class="links">
+                    <li><a href="#">Free Designs</a></li>
+                    <li><a href="#">Latest Designs</a></li>
+                    <li><a href="#">Themes</a></li>
+                    <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="links">
+                    <li><a href="#">Customer Agreement</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">GDPR</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Media Kit</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly dose
+                    of news, updates, helpful tips, and
+                    exclusive offers.
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Your email" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+</body>
+</html>
